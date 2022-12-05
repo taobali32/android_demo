@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpager_main_header_ad"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <include
+        layout="@layout/main_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@mipmap/nav_header_index"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <ScrollView
+        android:layout_below="@id/vpager_main_header_ad"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclwview_main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/main_menu_gray_line2"
+                android:background="#d8dde1"
+                android:layout_below="@id/recyclwview_main_menu"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+            </View>
+
+<!--旅游热讯-->
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/main_menu_gray_line2"
+                android:id="@+id/main_tra_hot_info"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/main_hot_news">
+
+                </ImageView>
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="秋天来了">
+
+                </TextView>
+
+            </LinearLayout>
+
+<!--            特价-->
+            <LinearLayout
+                android:id="@+id/main_sail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/main_tra_hot_info"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="1.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@mipmap/main_spread1">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@mipmap/main_spread2">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@mipmap/main_spread3">
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <ImageView
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@mipmap/main_spread4">
+
+                </ImageView>
+            </LinearLayout>
+
+<!--            旅行直播-->
+
+            <RelativeLayout
+                android:id="@+id/main_online"
+                android:layout_below="@+id/main_sail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_online_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/main_travle_online">
+
+                </ImageView>
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/img_online_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="旅行直播">
+                </TextView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/main_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:background="@mipmap/main_travle_online_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                    </ImageView>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:text="发现美国好东西"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:text="资深老式发红包"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_marginTop="20dp"
+                            android:src="@mipmap/main_travle_online_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></ImageView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:background="@mipmap/main_travle_online_pic2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                    </ImageView>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:text="发现美国好东西"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:text="资深老式发红包"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_marginTop="20dp"
+                            android:src="@mipmap/main_travle_online_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></ImageView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
