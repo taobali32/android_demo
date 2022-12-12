@@ -35,7 +35,6 @@ public class ListFragment extends Fragment {
 
         fragment.setArguments(bundle);
 
-
         return fragment;
     }
 
