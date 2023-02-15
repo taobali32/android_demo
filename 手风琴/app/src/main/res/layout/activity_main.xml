@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:groupIndicator="@null"
+    android:id="@+id/id_expandableListView"
+    android:indicatorLeft="10dp"
+
+    android:indicatorRight="40dp"
+
+    tools:context=".MainActivity">
+
+<!--        android:groupIndicator="@drawable/group_indicator"
+    一般自定义可控性好一些-->
+
+<!--   子元素一般也是自定义的  //   android:childIndicator="@drawable/indicator_expand"-->
+<!--    android:childDivider="#44ff00"-->
+</ExpandableListView>
