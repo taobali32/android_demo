@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Get"
+        android:id="@+id/mentGet">
+    </item>
+
+    <item android:title="menuResponse"
+        android:id="@+id/menuResponse">
+    </item>
+
+    <item android:title="Post"
+        android:id="@+id/submitPost">
+    </item>
+</menu>
